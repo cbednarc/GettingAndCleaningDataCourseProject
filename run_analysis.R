@@ -43,4 +43,4 @@ ncol <- length(tidydata[1,])
 avgdata <- aggregate(tidydata[,3:ncol],by=list(subject=tidydata$subject,activity=tidydata$activity),FUN=mean)
 
 # Output to file
-write.table(avgdata,"avgBySubjectAndActivity.txt",row.name=FALSE)
+write.table(avgdata,"avgBySubjectAndActivity.txt",row.names=FALSE)
